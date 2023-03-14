@@ -12,7 +12,7 @@
 }
 
 .social_list li {
-    margin-right:0 1em;
+    margin:0 1em;
 }
 
 .social_list li:hover {
@@ -27,7 +27,12 @@
     margin-top: 2em;
 }
 
-.copy_right span {
+.copy_right, p {
     font-weight: bold;
     color: #ffbb33;
 }
+
+.active_icon > svg {
+    color: yellow;
+  }
+  

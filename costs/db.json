@@ -1,0 +1,30 @@
+{
+  "projects": [],
+  "categories": [
+    {
+      "name": "Design",
+      "id": "1"
+    },
+    {
+      "name": "Web",
+      "id": "2"
+    },
+    {
+      "name": "Mobile",
+      "id": "3"
+    },
+    {
+      "name": "Planing",
+      "id": "4"
+    },
+    {
+      "name": "Development",
+      "id": "5"
+    },
+    {
+      "name": "Other",
+      "id": "6"
+    }
+  ]
+ 
+}

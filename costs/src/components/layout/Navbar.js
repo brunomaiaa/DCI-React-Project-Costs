@@ -10,9 +10,9 @@ function Navbar () {
   return (
     
          <nav className={styles.navbar}>
-        <Container customClass="navbar">
+        <Container>
             <Link to="/">
-                <img src={logo} alt="costs logo" className={styles.logo}/>
+                <img src={logo} alt="costs logo" />
             </Link>
             <ul className={styles.list}>
                 <li className={styles.item}><Link to="/">Home</Link></li>
