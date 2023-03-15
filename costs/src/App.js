@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes ,Route, Navigate } from 'react-router-dom';
+import { Routes ,Route } from 'react-router-dom';
 import { BrowserRouter } from 'react-router-dom';
 
 import Home from './components/pages/Home';
@@ -10,6 +10,7 @@ import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Projects from './components/pages/Projects';
+import Project from './components/pages/Project';
 
 
 function App() {
@@ -20,15 +21,12 @@ function App() {
       <Routes>
        
         <Route path="/" element={<Home/>} />
-        <Route path="/home" element={<Home/>} />
         <Route path="/company" element={<Company/>}/>
         <Route path="/projects" element={<Projects/>} />
         <Route path="/newproject" element={<NewProject/>} />
         <Route path="/contact" element={<Contact/>}/>
-        <Route path="*" element={<Navigate to="/" /> }/>
-        
-       
-       
+        <Route path="/project/:id" element={<Project/>}/>
+      
         </Routes>
         </Container>
         <Footer/>

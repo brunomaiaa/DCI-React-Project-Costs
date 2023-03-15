@@ -1,24 +1,69 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "teste",
+      "budget": "5000",
+      "category": {
+        "id": "2",
+        "name": "Web"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 1
+    },
+    {
+      "name": "test9",
+      "budget": "644",
+      "category": {
+        "id": "2",
+        "name": "Software development"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 7
+    },
+    {
+      "name": "test4",
+      "budget": "5677",
+      "category": {
+        "id": "1",
+        "name": "Web development"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 8
+    },
+    {
+      "name": "test4",
+      "budget": "5856565",
+      "category": {
+        "id": "3",
+        "name": "Mobile development"
+      },
+      "costs": 0,
+      "services": [],
+      "id": 9
+    }
+  ],
   "categories": [
     {
-      "name": "Design",
+      "name": "Web development",
       "id": "1"
     },
     {
-      "name": "Web",
+      "name": "Software development",
       "id": "2"
     },
     {
-      "name": "Mobile",
+      "name": "Mobile development",
       "id": "3"
     },
     {
-      "name": "Planing",
+      "name": "Design",
       "id": "4"
     },
     {
-      "name": "Development",
+      "name": "Marketing",
       "id": "5"
     },
     {
@@ -26,5 +71,4 @@
       "id": "6"
     }
   ]
- 
 }
