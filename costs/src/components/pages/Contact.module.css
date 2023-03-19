@@ -1,0 +1,81 @@
+.contact_container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    margin: auto;
+    padding: 40px;
+  }
+  
+  .contact_container h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .contact_container p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact_container label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact_container input[type="text"],
+  .contact_container input[type="email"],
+  .contact_container textarea {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .contact_container textarea {
+    height: 150px;
+  }
+  
+  .contact_container button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .contact_container button[type="submit"]:hover {
+    background-color: #ffbb33;
+  }
+  
+  .contact_container input:focus,
+  .contact_container textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  .contact_container label i {
+    margin-right: 10px;
+    color: #007bff;
+  }
+  
+  .contact_container label[for="name"] i::before {
+    content: "\f007";
+  }
+  
+  .contact_container label[for="email"] i::before {
+    content: "\f003";
+  }
+  
+  .contact_container label[for="message"] i::before {
+    content: "\f10d";
+  }
+  
