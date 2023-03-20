@@ -24,15 +24,19 @@ export default function Projects() {
 useEffect(() => {
 setTimeout (
   () => {
-    fetch('http://localhost:3000/api/projects', { 
+    fetch('http://localhost:3000/db.json', { 
       method: 'GET',
       headers: {
-        'Content-Type': 'application/json'
-        },
-       }).then(resp => resp.json())
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+        }
+       })
+       
+       .then(resp => resp.json())
         .then(data => {
-          console.log(data)
-          setProjects(data)
+          console.log(data.projects)
+          console.log("Hello")
+          setProjects(data.projects)
           setRemoveLoading(true)
         }
         ).catch(err => console.log(err))
@@ -64,7 +68,7 @@ function removeProject(id) {
 
   return (
     <div className={styles.project_container}>
-      <div className={styles.title_container}><h1>Projects</h1>
+      <div className={styles.title_container}><h1>Projects </h1>
       <LinkButton to="/newproject" text="New Project" />
       </div>
       {message && <Message type="success" msg={message} />}

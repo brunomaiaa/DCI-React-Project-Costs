@@ -8,6 +8,7 @@ import ProjectForm from '../project/ProjectForm'
 import Message from '../layout/Message'
 import ServiceForm from '../service/ServiceForm'
 import ServiceCard from '../service/ServiceCard'
+
 // import { v4 as uuidv4 } from 'react-uuid';
 
 
@@ -30,9 +31,11 @@ const [message, setMessage] = useState()
 const [type, setType] = useState()
 
 
+
 useEffect(() => {
   setTimeout(() => { 
-    fetch(`http://localhost:5000/projects/${id}`,
+    fetch('http://localhost:3000/db.json',
+    
     { method: 'GET',
     headers: {
         'Content-Type': 'application/json',
@@ -41,8 +44,16 @@ useEffect(() => {
     )
     .then((res) => res.json())
     .then((data) => {
-      setProject(data)
-      setServices(data.services)})
+      
+console.log(id)
+
+      let singleProject = data.projects.find(item=>item.id==id)
+      console.log(singleProject)
+      
+      setProject(singleProject)
+      console.log(singleProject.services)
+
+      setServices(singleProject.services)})
     .catch((err) => console.log(err))
 
   }, 300)

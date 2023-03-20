@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './ProjectCard.module.css'
 import {BsPencil, BsFillTrashFill} from 'react-icons/bs'
 import {Link} from 'react-router-dom'
 
+
 export default function ProjectCard({id, name, budget, category, handleRemove}) {
 
    
+
 
 
     const remove = (e) => {
@@ -20,9 +22,11 @@ export default function ProjectCard({id, name, budget, category, handleRemove}) 
             <span>Budget:</span> €{budget}
         </p>
         <p className={styles.category_text}>
-            <span className={`${styles[category.name.toLowerCase()]}`}></span> {category.name} 
+            <span className={`${styles[category.name.toLowerCase()]}`}></span> 
+            {category.name}
 
             {/* <span className = {`${styles[category?.toLowerCase() || '']}`}> </span> {category} */}
+            {/* {category.name}  */}
             
             
         </p>

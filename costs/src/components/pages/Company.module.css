@@ -1,4 +1,4 @@
-/* Define styles for the company container */
+
 .company_container {
     max-width: 800px;
     margin: 0 auto;
@@ -6,9 +6,10 @@
     font-family: Arial, sans-serif; 
     font-size: 16px;
     line-height: 1.5;
+    ;
   }
   
-  /* Define styles for the headings */
+  
   h1, h2 {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -21,20 +22,20 @@
     font-size: 20px;
   }
   
-  /* Define styles for the paragraphs */
-  p {
+  
+  .company_container p {
     margin-bottom: 20px;
     color: black;
   }
   
-  /* Define styles for the unordered list */
+  
   ul {
     list-style: disc;
     margin-left: 20px;
     margin-bottom: 20px;
   }
   
-  /* Define styles for the list items */
+  
   li {
     margin-bottom: 10px;
   }
